@@ -28,7 +28,7 @@ SYSTEM_PROMPT = (
 )
 
 # ── 생성 설정 ────────────────────────────────────────────────────
-# temperature=0: 질문별 2회 반복이 주로 성능 지표(로딩/속도/VRAM)의 변동을 보여준다.
+# temperature=1: Cloud 모델(gpt-5.6-luna)이 temperature 0을 지원하지 않아 Local-Cloud 비교 조건을 맞추기 위해 1로 맞춤. 이로인해 질문별 2회 반복이 답변 편차를 보여줌
 # num_predict  : 출력 한도. 두 모델에 동일하게 적용해야 응답 시간 비교가 성립한다.
 # num_ctx      : 실험에서 실제로 설정한 context 길이. Model Card의 최대값과는 별개로 기록한다.
 OPTIONS = {
