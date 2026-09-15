@@ -32,10 +32,9 @@ SYSTEM_PROMPT = (
 # num_predict  : 출력 한도. 두 모델에 동일하게 적용해야 응답 시간 비교가 성립한다.
 # num_ctx      : 실험에서 실제로 설정한 context 길이. Model Card의 최대값과는 별개로 기록한다.
 OPTIONS = {
-    "temperature": 0,
+    "temperature": 1,
     "num_predict": 1024,
     "num_ctx": 4096,
-    "seed": 42,
 }
 
 REPEATS = 2           # 질문당 본 실험 횟수
